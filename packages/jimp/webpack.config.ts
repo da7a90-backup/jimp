@@ -5,7 +5,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 export default {
   mode: isProd ? "production" : "development",
-  devtool: isProd ? "source-map" : "eval-cheap-module-source-map",
+  devtool: false,
   entry: "./src/index.js",
   target: "web",
   resolve: {
